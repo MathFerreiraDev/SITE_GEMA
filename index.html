@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gema - ICMC 🥚</title>
+</head>
+<body>
+    
+    <!--Cabeçalho + nav + sessão de título, balões e icons-->
+    <header>
+        <div class="background-binary">
+            <nav>
+                <img src="img/Logo GEMA.png" alt="Gema Logo" style="width: 60px; height: 60px;">
+                <ul>
+                    <li><a href="#home">Conhecer</a></li>
+                    <li><a href="#about">Membros</a></li>
+                    <li><a href="#about">Conteúdos</a></li>
+                    <li><a href="#about">Telegram</a></li>
+
+                </ul>
+            </nav>
+
+            <div id="home">
+                <div id="home-text">
+                    <h1>O Grupo de Programação Competitiva da USP.</h1>
+                    <h2>Quer aprender os algoritmos mais avançados e ganhar medalhas? Cola com a gente!</h2>
+                    <button>Conhecer</button>
+
+                    <div id="home-icons">
+                        <img src="img/USP.png" alt="Codeforces Icon" style="height: 30px;">
+                        <img src="img/ICMC.png" alt="AtCoder Icon" style="height: 30px;">
+                    </div>
+                </div>
+
+                <img id="home-img" src="img/Balões.png" alt="Imagem Home">
+
+
+
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--Sessão de Sobre Nós-->
+    <section id="about">
+        <div id="about-container" class="background-gema">
+            <div id="about-text">
+                    <h1>Quem Somos?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce eget hendrerit felis, eget commodo tortor. Praesent eu arcu in lacus sagittis maximus. 
+                    In hac habitasse platea dictumst. Maecenas varius purus at lacus luctus ullamcorper. 
+                    Duis consectetur sem eros, id finibus enim gravida eget. Ut dapibus, metus sed tempor rutrum, 
+                    urna nibh efficitur felis, ac ultrices nibh leo vel nisl. Suspendisse eget velit gravida, 
+                    rutrum lorem a, maximus elit. Nulla in elementum ligula.</p>
+            </div>
+
+            <img src="img/Fotos.png" alt="Foto do GEMA" style="width: 30vw;">
+       </div>
+    </section>
+
+    <!--Sessão de Galeria de Mídia-->
+    <section id="gallery">
+        <div id="gallery-container" class="background-binary">
+            <div id="gallery-text">
+                <h1>GEMA na Mídia</h1>
+                <p>Veja o que andam falando do GEMA!</p>
+            </div>
+
+            <div class="carrousel-wrapper">
+
+                <button class="nav-arrow left-arrow">&#10094;</button>
+
+                        <div id="gallery-carrousel">
+
+                            <div class="gallery-item">
+                                <img src="img/image_midia.png" alt="Notícia 1" style="width: max-content;">
+                                <div>
+                                    <p>GEMA é destaque na mídia local por suas conquistas em competições de programação. #1</p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <img src="img/image_midia.png" alt="Notícia 2" style="width: max-content;">
+                                <div>
+                                    <p>GEMA é destaque na mídia local por suas conquistas em competições de programação. #2</p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <img src="img/image_midia.png" alt="Notícia 3" style="width: max-content;">
+                                <div>
+                                    <p>GEMA é destaque na mídia local por suas conquistas em competições de programação. #3</p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <img src="img/image_midia.png" alt="Notícia 4" style="width: max-content;">
+                                <div>
+                                    <p>GEMA é destaque na mídia local por suas conquistas em competições de programação. #4</p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <img src="img/image_midia.png" alt="Notícia 5" style="width: max-content;">
+                                <div>
+                                    <p>GEMA é destaque na mídia local por suas conquistas em competições de programação. #5</p>
+                                </div>
+                            </div>
+
+                        </div>
+                <button class="nav-arrow right-arrow">&#10095;</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!--Sessão de Premiações-->
+    <section id="awards">
+        <div id="awards-container" class="background-gema">
+            <div id="awards-text">
+                <h1>Premiações do GEMA!</h1>
+                <p>Veja o que já ganhamos por aí ;)</p>
+            </div>
+
+            <div id="awards-carrousel"> <!-- Ia fazer outro carrossel, mas por enquanto vai ser assim -->
+
+                <div class="awards-item">
+                    <img src="img/OBI.png" alt="Premio 1" >
+                    <section class="awards-stats">
+                        <span><img src="img/g-medal.svg" alt="Ouro">10</span>
+                        <span><img src="img/s-medal.svg" alt="Prata">6</span>
+                        <span><img src="img/b-medal.svg" alt="Bronze">4</span>      
+                    </section>
+                    <div>
+                        <p>Olimpíada Brasileira de Informática (OBI)</p>
+                    </div>
+                    <button onclick="awardCard(
+                    'img/OBI.png', 
+                    'Olimpíada Brasileira de Informática (OBI)', 
+
+                    `<h3>2024</h3>
+                    <p><span>1</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>5</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>18</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <hr>
+                    <h3>2023</h3>
+                    <p><span>1</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>5</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>18</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>`)">Ver Mais</button>
+
+                </div>
+
+                <div class="awards-item">
+                    <img src="img/icpc.png" alt="Premio 1" >
+                    <section class="awards-stats">
+                        <span><img src="img/g-medal.svg" alt="Ouro">10</span>
+                        <span><img src="img/s-medal.svg" alt="Prata">6</span>
+                        <span><img src="img/b-medal.svg" alt="Bronze">4</span>      
+                    </section>
+                    <div>
+                        <p>International Collegiate Programming Contest (ICPC)</p>
+                    </div>
+                    <button onclick="awardCard(
+                    'img/icpc.png', 
+                    'International Collegiate Programming Contest (ICPC)', 
+
+                    `<h3>2024</h3>
+                    <p><span>1</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>5</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>18</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <hr>
+                    <h3>2023</h3>
+                    <p><span>1</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>5</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>18</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>`)">Ver Mais</button>
+                </div>
+
+                <div class="awards-item">
+                    <img src="img/MEP.png" alt="Premio 1" >
+                    <section class="awards-stats">
+                        <span><img src="img/g-medal.svg" alt="Ouro">10</span>
+                        <span><img src="img/s-medal.svg" alt="Prata">6</span>
+                        <span><img src="img/b-medal.svg" alt="Bronze">4</span>      
+                    </section>
+                    <div>
+                        <p>Maratona Feminina de Programação (MEP)</p>
+                    </div>
+                    <button onclick="awardCard(
+                    'img/MEP.png', 
+                    'Maratona Feminina de Programação (MEP)', 
+
+                    `<h3>2024</h3>
+                    <p><span>1</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>5</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>18</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <hr>
+                    <h3>2023</h3>
+                    <p><span>1</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>5</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>
+                    <p><span>18</span> <img src='img/g-medal.svg'> Pietra Gullo, a gema</p>`)">Ver Mais</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão de Contato-->
+    <section id="contact">
+        <div id="contact-container" class="background-binary">
+            <div id="contact-text">
+                <h1>Embarque Conosco!</h1>
+                <p>Fique Conectado com o GEMA!</p>
+            </div>
+
+            <div id="contact-icons">
+                <a href="#"><img src="img/yt.svg" alt="YouTube Icon" ></a>
+                <a href="#"><img src="img/ig.svg" alt="Instagram Icon" ></a>
+                <a href="#"><img src="img/tg.svg" alt="Telegram Icon" ></a>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <h3>GEMA - ICMC USP 2026</h3>
+        <h3>Desenvolvido por <a href="https://github.com/MathFerreiraDev">MathFerreiraDev</a></h3>
+    </footer>
+
+    <!-- MODAL EM CARD-->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal">&times;</button>
+            
+            <div class="modal-header">
+                <img id="modal-img" src="" alt="Logo">
+                <h2 id="modal-title"></h2>
+            </div>
+            
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
