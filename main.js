@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnRight = document.querySelector('.right-arrow');
 
     function moverDireita() {
-        let tamanhoItem = carrossel.firstElementChild.clientWidth + 30;
+        let tamanhoItem = carrossel.firstElementChild.clientWidth + 30; // 30 é a margem entre os itens
         carrossel.scrollBy({ left: tamanhoItem, behavior: 'smooth' });
     }
 
     function moverEsquerda() {
-        let tamanhoItem = carrossel.firstElementChild.clientWidth + 30;
+        let tamanhoItem = carrossel.firstElementChild.clientWidth + 30; // 30 é a margem entre os itens
         carrossel.scrollBy({ left: -tamanhoItem, behavior: 'smooth' });
     }
 
