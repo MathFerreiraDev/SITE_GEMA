@@ -71,3 +71,16 @@ if (btnClose && modal) {
     });
 }
 
+
+
+// EASTER EGG ;b
+
+const seq = '38384040373937396665'; 
+let input = '';
+
+document.onkeydown = (e) => {
+  input += e.keyCode; 
+  input = input.slice(-seq.length); 
+  
+  if (input === seq) window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+};
