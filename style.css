@@ -171,12 +171,15 @@ li a {
 
 #about-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     padding: 20px;
 }
 
 #about-text {
-    width: 80%;
+    flex: 1 1 300px;
 }
 
 
