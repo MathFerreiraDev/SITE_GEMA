@@ -72,6 +72,94 @@ if (btnClose && modal) {
 }
 
 
+//=================================================================================================================================
+
+
+// CARREGAR DADOS DO JSON
+async function carregarDados() {
+    try {
+        
+        const resposta = await fetch('dados.json');
+        const dados = await resposta.json();
+
+        const gallery = document.getElementById('gallery-carrousel');
+        gallery.innerHTML = ''; 
+
+        //criar notícia dinamicamente
+        dados.Noticias.forEach(noticia => {
+            gallery.innerHTML += `
+                <div class="gallery-item">
+                    <img src="${noticia.imagem}" alt="${noticia.titulo}" style="width: max-content;">
+                    <div>
+                        <p>${noticia.titulo}</p>
+                    </div>
+                </div>
+            `;
+        });
+
+        const awards = document.getElementById('awards-carrousel');
+        awards.innerHTML = ''; 
+
+        //criar card de medalhas dinamicamente
+        dados.campeonatos.forEach(camp => {
+
+            let modalHtml = '';
+
+            
+            const iconesMedalha = {
+                'ouro': 'g-medal.svg',
+                'prata': 's-medal.svg',
+                'bronze': 'b-medal.svg'
+            };
+
+            for (const [ano, medalhistas] of Object.entries(camp.anos)) {
+                modalHtml += `<h3>${ano}</h3>`;
+                
+                // 2. Loop direto e mais limpo
+                for (const m of medalhistas) {
+                    modalHtml += `
+                        <p>
+                            <span>${m.posicao}</span> 
+                            <img src='img/${iconesMedalha[m.medalha]}'> 
+                            ${m.nome}
+                        </p>`;
+                }
+
+                modalHtml += `<hr>`;
+            }
+
+            const divItem = document.createElement('div');
+
+            // Adiciona a classe e o conteúdo HTML ao card
+            divItem.className = 'awards-item';
+            divItem.innerHTML = `
+                <img src="${camp.imagem}" alt="${camp.nome}"> 
+                <section class="awards-stats">
+                    <span><img src="img/g-medal.svg" alt="Ouro">${camp.medalhas.ouro.total}</span>
+                    <span><img src="img/s-medal.svg" alt="Prata">${camp.medalhas.prata.total}</span>
+                    <span><img src="img/b-medal.svg" alt="Bronze">${camp.medalhas.bronze.total}</span>      
+                </section>
+                <div>
+                    <p>${camp.nome}</p>
+                </div>
+                <button>Ver Mais</button>
+            `;
+
+            const btn = divItem.querySelector('button');
+            btn.addEventListener('click', () => {
+                awardCard(camp.imagem, camp.nome, modalHtml);
+            });
+
+            // Adiciona o card ao conjunto de competições
+            awards.appendChild(divItem);
+        });
+
+    } catch (erro) {
+        console.error(erro);
+    }
+}
+
+carregarDados();
 
 // EASTER EGG ;b
 

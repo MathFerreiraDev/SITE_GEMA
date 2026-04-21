@@ -1,0 +1,89 @@
+{
+  "campeonatos": [
+    {
+      "nome": "Olimpíada Brasileira de Informática (OBI)",
+      "imagem": "img/OBI.png",
+      "medalhas": {
+        "ouro": { "total": 10 },
+        "prata": { "total": 6 },
+        "bronze": { "total": 4 }
+      },
+      "anos": {
+        "2024": [
+          { "posicao": 1, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 5, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 18, "nome": "Pietra Gullo, a gema", "medalha": "ouro" }
+        ],
+        "2023": [
+          { "posicao": 1, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 5, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 18, "nome": "Pietra Gullo, a gema", "medalha": "ouro" }
+        ]
+      }
+    },
+    {
+      "nome": "International Collegiate Programming Contest (ICPC)",
+      "imagem": "img/icpc.png",
+      "medalhas": {
+        "ouro": { "total": 10 },
+        "prata": { "total": 6 },
+        "bronze": { "total": 4 }
+      },
+      "anos": {
+        "2024": [
+          { "posicao": 1, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 5, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 18, "nome": "Pietra Gullo, a gema", "medalha": "ouro" }
+        ],
+        "2023": [
+          { "posicao": 1, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 5, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 18, "nome": "Pietra Gullo, a gema", "medalha": "ouro" }
+        ]
+      }
+    },
+    {
+      "nome": "Maratona Feminina de Programação (MEP)",
+      "imagem": "img/MEP.png",
+      "medalhas": {
+        "ouro": { "total": 10 },
+        "prata": { "total": 6 },
+        "bronze": { "total": 4 }
+      },
+      "anos": {
+        "2024": [
+          { "posicao": 1, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 5, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 18, "nome": "Pietra Gullo, a gema", "medalha": "ouro" }
+        ],
+        "2023": [
+          { "posicao": 1, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 5, "nome": "Pietra Gullo, a gema", "medalha": "ouro" },
+          { "posicao": 18, "nome": "Pietra Gullo, a gema", "medalha": "ouro" }
+        ]
+      }
+    }
+  ],
+  "Noticias": [
+    {
+      "titulo": "GEMA é destaque na mídia local por suas conquistas em competições de programação. #1",
+      "imagem": "img/image_midia.png"
+    },
+    {
+      "titulo": "GEMA é destaque na mídia local por suas conquistas em competições de programação. #2",
+      "imagem": "img/image_midia.png"
+    },
+    {
+      "titulo": "GEMA é destaque na mídia local por suas conquistas em competições de programação. #3",
+      "imagem": "img/image_midia.png"
+    },
+    {
+      "titulo": "GEMA é destaque na mídia local por suas conquistas em competições de programação. #4",
+      "imagem": "img/image_midia.png"
+    },
+    {
+      "titulo": "GEMA é destaque na mídia local por suas conquistas em competições de programação. #5",
+      "imagem": "img/image_midia.png"
+    }
+  ]
+}
