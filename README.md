@@ -13,6 +13,8 @@ para as conquistas do grupo em maratonas como OBI, ICPC e MEP, além de conter c
 
 > O site faz parte do Projeto Dev Learn, para alunos que já possuem experiência na área de Desenvolvimento web
 
+[LINK PARA A PÁGINA](https://mathferreiradev.github.io/SITE_GEMA/)
+
 ---
 
 ## Ferramentas Utilizadas
