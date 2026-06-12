@@ -33,7 +33,7 @@ html {
 }
 
 body {
-    background-color: var(--background-primary);
+    background-color: black;
     color: var(--text-color);
     font-family: var(--font-family);
     margin: 0;
@@ -68,6 +68,7 @@ nav {
 }
 
 #gallery {
+    background-color: var(--background-primary);
     padding: 20px;
 }
 
@@ -78,6 +79,7 @@ nav {
 
 #contact {
     padding: 20px;
+    background-color: var(--background-primary);
 }
 
 footer {
