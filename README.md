@@ -7,7 +7,7 @@
 
 
 ## Sobre o Projeto 📖
-Este site foi desenvolvido para o Processo Seletivo **CODELAB**, sendo escolhido como tema, um site para o Grupo de Extensão **GEMA**, o grupo de programação competitiva do ICMC-USP. O site serve como vitrine virtual 
+Este site foi desenvolvido para o Processo Seletivo do **CODELAB**, sendo escolhido como tema, um site para o Grupo de Extensão **GEMA**, o grupo de programação competitiva do ICMC-USP. O site serve como vitrine virtual 
 para as conquistas do grupo em maratonas como OBI, ICPC e MEP, além de conter conteúdos e notícias sobre o mesmo.
 
 
